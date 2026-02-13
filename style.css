@@ -204,3 +204,33 @@ button:active {
     font-size: 13px;
   }
 }
+
+.carrusel {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  border-radius: 20px;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+
+/* Quitar barra fea en iPhone */
+.slides::-webkit-scrollbar {
+  display: none;
+}
