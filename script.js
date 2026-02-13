@@ -21,3 +21,17 @@ function volver() {
 
   document.getElementById("menu").style.display = "block";
 }
+
+function abrirCarta() {
+  const sobre = document.querySelector(".sobre");
+  const sonido = document.getElementById("papelSound");
+
+  sobre.classList.toggle("abierto");
+
+  if (sonido) {
+    sonido.currentTime = 0;
+    sonido.play();
+  }
+}
+
+

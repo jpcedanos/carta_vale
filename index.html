@@ -29,13 +29,41 @@
   </div>
 
   <!-- SECCIÓN MENSAJE -->
-  <div id="mensaje" class="pantalla oculto">
-    <h2>💌</h2>
-    <p>
-      Te quiero más de lo que puedo explicar con palabras.
-    </p>
-    <button onclick="volver()">⬅ Regresar</button>
+<div id="mensaje" class="pantalla oculto">
+
+  <div class="contenedor-carta">
+    <div class="sobre" onclick="abrirCarta()">
+      <div class="tapa"></div>
+      <div class="carta" id="cartaContenido">
+        <p>
+          <strong>Feliz San Valentín, pequeña.</strong><br><br>
+
+          Como todos los días, pero sobre todo hoy, quiero recordarte lo especial que eres para mí.
+          Atesoro con mucho cariño todos los recuerdos que tenemos juntos,
+          y también es extra especial porque es nuestro primer aniversario
+          de aquella primera cita.<br><br>
+
+          Estoy muy feliz al ver que hoy estoy todavía más encantado
+          que con la mujer a la que invité a salir por un café que no le gustaba.
+          Gracias por no juzgar mi pésimo gusto para elegir cafeterías ese día.<br><br>
+
+          Recuerda que siempre, y no lo dudes, vas a ser tú.
+          Porque eres la mujer más especial, linda, inteligente,
+          sudona y trabajadora que conozco.<br><br>
+
+          Eres mi persona favorita en este mundo.
+        </p>
+      </div>
+    </div>
   </div>
+
+  <button onclick="volver()">⬅ Regresar</button>
+
+</div>
+
+<audio id="papelSound" src="audio/carta.mp3"></audio>
+
+
 
   <!-- SECCIÓN RECUERDO -->
   <div id="recuerdo" class="pantalla oculto">
